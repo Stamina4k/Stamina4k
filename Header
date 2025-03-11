@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+ <style>
+      
+    * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: montserrat, sans-serif;
+     font-weight: bold;
+     background: #000000;
+}
+
+.header {
+     justify-content: space-between;
+     display: flex;
+     align-items: center;
+     padding: 0 20px;
+     height: 10vh;
+     background: #09007e;
+}
+
+.logo {
+     font-size: 40px;
+     color: #2bffff;
+}
+
+.logo span {
+     color: #0b8151;
+}
+
+.nav-bar {
+     display: flex;
+}
+
+.nav-bar ul {
+     display: flex;
+     align-items: center;
+}
+
+.nav-bar li {
+     margin: 0px 20px;
+     padding: 5px;
+     border-radius: 5px;
+}
+
+.nav-bar a {
+     color: #ffffff;
+     font-size: 20px;
+}
+
+.nav-bar li:hover {
+     background: #0b8151;
+     transform: scale(0.8); 
+     transition :0.3s ease;
+}
+
+.hamburger {
+     width: 50px;
+     height: 40px;
+     display: none;
+     flex-direction: column;
+     justify-content: space-around;
+     cursor : pointer;
+     
+}
+
+.hamburger div {
+     background: #82828e;
+     width: 40px;
+     height: 5px;
+     border-radius: 10px;
+     transition: 0.3s ease;
+     margin: 6px;
+     position : relative;
+}
+
+
+@media (max-width: 600px) {
+                  
+       .hamburger{
+            display : block ;
+            background: transparent;
+       }
+        
+       
+       .nav-bar{
+          display: block;
+          position :fixed;
+          top:50px;
+          background: #000129;
+          width: 90%;
+          height: 618px;
+          right : -5px;
+          border-radius: 7px;
+          border-top-right-radius: 0px;
+          border: 1px dotted #293809;
+          overflow-y: auto ;
+          transition:  ease;
+          display :none;
+     }
+     .nav-bar ul{
+          display : block ;
+          align-items: center ;
+          width: 70%;
+          margin-left: 5rem;
+          justify-content: center ;a
+          background: blue;
+     }
+     .nav-bar li{
+          background: #565656;
+          text-align: center ;
+          margin: 20px;
+          padding: 30px;
+          width: 95%;
+          margin-left: 0px;
+          border-radius: 50px;
+          box-shadow: 0px 30px 3px 0px #000020;
+          
+     }
+     .nav-bar a{
+          font-size:25px;
+          color: #ffffff;
+          
+     }
+     
+     .nav-bar.active{
+          display : block ;
+          
+     }
+     
+     .hamburger.active div:nth-child(1) {
+          top: 30%;
+          transform: rotate(47deg);
+          background: red;
+          transition : 0.5s;
+     } 
+     .hamburger.active div:nth-child(2) {
+          opacity :0;
+     }     
+     .hamburger.active div:nth-child(3) {
+          top: -26%;
+          transform:  rotate(-47deg);
+          background: #0018ff;
+         transition : 0.5s ;
+     }       
+     
+}
+
+      
+      
+ </style> 
+</head>
+
+<body>
+  
+  <header class="header">
+       <div class="logo">Stams<span>pro</span></div>
+       <nav class="nav-bar">
+            <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Dev-boy</a></li>
+                 <li><a href="">Team/SCC</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Contact</a></li>
+                
+            </ul>
+       </nav>
+       
+       <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+       </div>
+       
+     
+ </header>  
+  
+       
+       
+  <script > 
+       const navBar = document.querySelector(".nav-bar");
+const hamburger =document.querySelector(".hamburger");
+
+hamburger.addEventListener('click', ()=>{
+     navBar.classList.toggle("active");
+     hamburger.classList.toggle("active");
+}) 
+  </script>
+
+  
+</body>
+
+</html>
