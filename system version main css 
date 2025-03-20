@@ -1,0 +1,321 @@
+* {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: montserrat, sans-serif;
+     font-weight: bold;
+     background: #4f69be ;
+     color: #ffffff;
+}
+
+
+
+
+.header {
+     justify-content: space-between;
+     display: flex;
+     align-items: center;
+     padding: 0 20px;
+     height: 10vh;
+     background: #09007e;
+}
+
+.logo {
+     font-size: 40px;
+     color: #1574f9;
+}
+
+.logo span {
+     color: #64f953;
+}
+
+.nav-bar {
+     display: flex;
+}
+
+.nav-bar ul {
+     display: flex;
+     align-items: center;
+}
+
+.nav-bar li {
+     margin: 0px 20px;
+     padding: 5px;
+     border-radius: 5px;
+}
+
+.nav-bar a {
+     color: #ffffff;
+     font-size: 20px;
+}
+
+.nav-bar li:hover {
+     background: #1574f9 ;
+     transform: scale(0.8); 
+     transition :0.3s ease;
+     cursor:pointer;
+}
+
+.hamburger {
+     width: 50px;
+     height: 40px;
+     display: none;
+     flex-direction: column;
+     justify-content: space-around;
+     cursor : pointer;
+     
+}
+
+.hamburger div {
+     background: #82828e;
+     width: 40px;
+     height: 5px;
+     border-radius: 10px;
+     transition: 0.3s ease;
+     margin: 6px;
+     position : relative;
+}
+
+/* This is mobile screen width codes placed down*/
+
+
+
+
+@media (max-width: 600px) {
+                  
+       .hamburger{
+            display : block ;
+            background: transparent;
+       }          
+       .nav-bar{
+          display: block;
+          position :fixed;
+          top:50px;
+          background: #000129;
+          width: 90%;
+          height: 618px;
+          right : -5px;
+          border-radius: 7px;
+          border-top-right-radius: 0px;
+          border: 1px dotted #293809;
+          overflow-y: auto ;
+          transition:  ease;
+          display :none;
+          
+     }
+     .nav-bar ul{
+          display : block ;
+          align-items: center ;
+          width: 70%;
+          margin-left: 5rem;
+          justify-content: center ;a
+          background: blue;
+     }
+     .nav-bar li{
+          background:  #82828e;
+          text-align: center ;
+          margin: 20px;
+          padding: 30px;
+          width: 95%;
+          margin-left: 0px;
+          border-radius: 50px;
+          box-shadow: 0px 30px 3px 0px #000020;
+          
+     }
+     .nav-bar a{
+          font-size:25px;
+          color: #ffffff;
+          
+     }
+     
+     .nav-bar.active{
+          display : block ;
+          transition:  1.5s ;
+     }
+     .hamburger.active div:nth-child(1) {
+          top: 30%;
+          transform: rotate(47deg);
+          background: #1574f9 ;
+          transition : 0.3s;
+     } 
+     .hamburger.active div:nth-child(2) {
+          opacity :0;
+     }     
+     .hamburger.active div:nth-child(3) {
+          top: -26%;
+          transform:  rotate(-47deg);
+          background: #1574f9;
+         transition : 0.3s ;
+     }       
+     
+}
+.main{
+     height: 85rem;
+     width: 100% ;
+     background:  ;
+     justify-content: center;
+     top: ;
+}
+.first-container-cover{
+     height: 30%;
+     width: 99%;
+     background-image: url(   content://com.android.externalstorage.documents/tree/primary%3APictures%2Fcode/document/primary%3APictures%2Fcode%2FScreenshot_20250319-155011~2.jpg    );
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: auto;
+     margin-top: ;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 2px;
+     box-shadow: 0px 10px 15px 5px #070728;
+}
+
+
+
+.first-container-cover container{
+     height: 80%;
+     width: 50%;
+     background: ;
+     margin: 6px;
+     border-radius: 10px;
+    margin:  30px ;
+   box-shadow: 0px 10px 15px 5px #070728;
+}
+.ff{
+    background: #121f35;
+    justify-content: center;
+    align-items: center;
+   
+}
+.ff h1{
+     margin: 70px;
+}
+.ff h2{
+     margin-left: 70px ;
+     margin-top: 10px;
+}
+
+.ttt{
+     background: white;
+     justify-content: center ;
+     align-items: center ;
+     width: 99%;
+     border-radius: 5px;
+     box-shadow:none;
+}
+.tttx{
+     height: 90%;
+     width: 80%;
+     background: #09007e;
+     font-size:20px;
+     border-radius: px;
+     box-shadow: 0px 10px 15px 5px #070728;
+}
+.tttx h2{
+     margin: 20px;
+     font-weight:bold;
+}
+.down-cover{
+     height: 48rem;
+     width: 98.5%;
+     background: #6c0095;
+     margin: auto;
+     margin-top: 20px;  
+     display: block;
+     box-shadow: 0px 10px 15px 5px #070728;
+}
+.down-cover h1{
+     background: #126b13 ;
+     width: 40%;
+     margin-left: 30%;
+     box-shadow: 0px 10px 15px 5px #070728;
+     text-align: center;
+     border-radius: 50px;
+}
+.down-cover span{
+     
+     padding: 10px;  
+     float:;
+}
+
+.down-cover div{
+     height: 10.5rem ;
+     width: 85%;
+     background: #09007e ;
+     margin-top: 10px;
+     margin-bottom: 60px;
+     margin-left: 5px;  
+     justify-content: center;   
+     border-radius: 70px;
+     border: 1.5px solid #fff ;
+     box-shadow: 0px 10px 15px 5px #070728;
+}
+.ccc .inner{
+     max-height: 90%;
+     max-width: 18.5%;
+     float: left;
+     border-radius: 100px; 
+     border:none;    
+}
+.ccc .inn{
+     background-image: url(    content://com.android.externalstorage.documents/tree/primary%3APictures%2Fcode/document/primary%3APictures%2Fcode%2FScreenshot_20250320-050630.jpg   );
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.ccc .innn{
+     background-image: url(  content://com.android.externalstorage.documents/tree/primary%3APictures%2Fcode/document/primary%3APictures%2Fcode%2FScreenshot_20250320-055705.jpg   );
+      background-repeat: no-repeat;
+     background-size: cover;
+}
+.ccc .innnn{
+     background-image: url(  content://com.android.externalstorage.documents/tree/primary%3APictures%2Fcode/document/primary%3APictures%2Fcode%2FScreenshot_20250320-060221.jpg   );
+      background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.ccc .in-text{
+     height: 88%;
+     width: 75%;
+     background: #4a0083;
+     float: right;
+     margin-top: 10px;
+     margin-right: 5px;
+     border-top-left-radius: 10px ;
+     border-bottom-left-radius: 10px;
+     display:block;
+     justify-content: center;
+     align-items: center;
+     color: ;
+     border:none;
+}
+.ccc h2{
+     margin: 10px 5px;
+     font-weight: bold;
+}
+.footer{
+     height: 10rem;
+     width: 100%;
+     background:  #09007e;
+     margin-top: 87px;     
+}
+.footer section{
+     justify-content: center;
+     display: block;
+}
+#by{
+     float: right;
+     margin-bottom: 20px;
+     margin-right: 20px;
+}
+#copy{
+     text-align: center;
+     padding: 30px;
+}
+#thk{
+     margin-left: 20px;
+}
